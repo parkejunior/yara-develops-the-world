@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
+    <title>Quiz</title>
+    <style>
+        @font-face {
+            font-family:'Harry';
+            src: url(fonts/HARRYP__.TTF)format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Poppins:ital,wght@0,300;1,400&family=Roboto:wght@300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+        body{
+            background-image:linear-gradient(to right,#0d174d, #4d5ba1 );
+            }
+        h1{
+            color:#A37E0A;
+            font-family:'Harry', Times, serif ;
+            font-size: 3em;
+            text-align: center;
+        }
+       
+        #main{
+            color: black;
+            background-color: white;
+            width: 400px;
+            height: 200px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #0d174ddc ;
+            border-radius: 7px;
+            font-size: 1em;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+        }
+        .resposta >p{
+            display:none;
+            font-size: 1em;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            
+        }
+        div{
+            font-weight: bold;
+            color: #10194d96;
+            font-style: italic ;
+            font-size: .90em;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+        }
+        .resposta:hover >p{
+            display: block;
+            color:green ;
+            width: 300px;
+            font-size: 1.1em;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            
+        }
+        .question{
+            font-weight: 600;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Harry Potter Quiz</h1>
+    <div id="main">
+    <p> Now, let's see if you are a really Harry Potter fan! Anwser
+        the following questions to test your knowledge: </p>
+
+    <p class="question">What is Harry parents name?</p>
+    
+   <div class="resposta">
+    Pass the mouse here to see the awnser.
+    <p>James Potter and Lily Potter!</p>
+   </div>
+
+    <p class="question">What is Harry parents name?</p>
+    
+   <div class="resposta">
+    Pass the mouse here to see the awnser.
+    <p>James Potter and Lily Potter!</p>
+  </div>
+
+</div>
+</body>
+</html>

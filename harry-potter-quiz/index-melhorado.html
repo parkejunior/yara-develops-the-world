@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
+    <title>Harry Potter Quiz</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Poppins:ital,wght@0,300;1,400&family=Roboto:wght@300;400;500&display=swap');
+
+        @font-face {
+            font-family:'Harry';
+            src: url(fonts/HARRYP__.TTF)format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            background-image:linear-gradient(to right, #0d174d, #4d5ba1);
+        }
+        
+        h1 {
+            color:#ca9800;
+            font-family:'Harry', Times, serif;
+            font-size: 3em;
+            text-align: center;
+        }
+       
+        .card {
+            color: black;
+            background-color: white;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #0d174ddc;
+            border-radius: 7px;
+            font-size: 1em;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+        }
+
+        .question-item {
+            border: 1px solid;
+            border-color: rgb(230, 230, 230);
+            padding: 5px 10px;
+            border-radius: 7px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #10194d96;
+            font-style: italic;
+            font-size: .90em;
+            font-weight: 300;
+        }
+
+        .question {
+            font-weight: 600;
+            color: black;
+        }
+
+        .answer:hover > p {
+            display: block;
+            color:green ;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .answer > p {
+            display:none;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        .user-answer-options div {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Harry Potter Quiz</h1>
+    <main class="card">
+        <p> Now, let's see if you are a really Harry Potter fan! Anwser
+            the following questions to test your knowledge: </p>
+        
+        <div class="question-item">
+            <p class="question">What is Harry parents name?</p>
+        
+            <div class="answer">
+            Pass the mouse here to see the awnser.
+            <p>James Potter and Lily Potter!</p>
+            </div>
+        </div>
+
+        <div class="question-item">
+            <p class="question">How old does Harry find out he's a wizard?</p>
+        
+            <div class="answer">
+            Pass the mouse here to see the awnser.
+            <p>11 years old.</p>
+            </div>
+
+            <div class="user-answer">
+                <p>Your answer was...:</p>
+
+                <div class="user-answer-options">
+                    <div>
+                        <input type="radio" name="answer2" id="answer2right">
+                        <label for="answer2right">Right</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" name="answer2" id="answer2wrong">
+                        <label for="answer2wrong">Wrong</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
