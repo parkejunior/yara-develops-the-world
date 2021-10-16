@@ -1,4 +1,5 @@
 # Yara's Develops the World
+Aqui está armazenado os excercícios e projetinhos feitos por Yara enquanto ela aprende ser uma das melhores em código!
 
 ## [Harry Potter Quiz](harry-potter-quiz)
 Pequena página onde o usuário tem um Quiz sobre Harry Potter, onde ele pode ver as respostas ao passar o mouse sobre um determinado trecho.  
