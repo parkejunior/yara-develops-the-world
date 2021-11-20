@@ -13,3 +13,12 @@ Código original criado em *[index.html](harry-potter-quiz/index.html)*. Modific
 - Correção da tabulação
 - Organização dos `@import` no inicio do `<style>`
 - Nomeação de várias classes para melhor leitura
+
+## [Train Counter]
+Página que contem um contador para o usuário clicar no botão toda vez que um passageiro entrar dentro do trem em ordem de saber o numero total de passageiros sem ter que contá-los.
+Essa página foi criada usando o evento `onclick` para saber cada vez que o usuário clicou no botão.
+Essa página tem uma função que incrementa `1+` cada vez que o usuário preciona novamente o botão.
+
+
+## [Color Wheel Switche]
+Página criada com o intuito de exercitar os conceitos sobre DOM. A página possui diversos botões que quando clicados mudam as cores do background da página. Nesse exercício foi usado `getElementById()` para acessar o id elementos que queriamos acessar. 
