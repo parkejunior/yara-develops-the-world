@@ -10,3 +10,8 @@ Umas das primeiras coisas que notei no código HTML, tanto nesse exercício, qua
 Fonte: [https://stackoverflow.com/a/44124060](https://stackoverflow.com/a/44124060)
 
 O *shortcut* era usado por navegadores mais antigos, como o IE. Sabendo disso então removi o *shortcut*.
+
+
+## Espaços em branco
+
+Para melhor leitura do código, removi alguns espaços em branco e arrumei a tabulação da tag `<script>`.

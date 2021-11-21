@@ -8,9 +8,7 @@
     <title>Color Switche</title>
     <link rel="stylesheet" href="style.css">   
 </head>
-
 <body>
-
     <h1>Color Switche Exercise</h1>
 
     <p id="texto">Try clicking on one of the colors below to change the page color.</p>
@@ -23,29 +21,27 @@
         <input type="button" value="Original" id="original" onclick="original()">
     </div>
 
-<script>
+    <script>
+        function blue(){
+            var back1 = window.document.getElementById('blue')
+            window.document.body.style.background = '#63aae4'
+        }
 
-    function blue(){
-        var back1 = window.document.getElementById('blue')
-        window.document.body.style.background = '#63aae4'
-    }
+        function red(){
+            window.document.body.style.background = '#9c3d3d'
+        }
 
-    function red(){
-        window.document.body.style.background = '#9c3d3d'
-    }
+        function yellow(){
+            window.document.body.style.background = '#faf16d'
+        }
 
-    function yellow(){
-        window.document.body.style.background = '#faf16d'
-    }
+        function green(){
+            window.document.body.style.background = '#0e9762'
+        }
 
-    function green(){
-        window.document.body.style.background = '#0e9762'
-    }
-
-    function original(){
-        window.document.body.style.background = '#ffffff'
-    }
-
+        function original(){
+            window.document.body.style.background = '#ffffff'
+        }
     </script>
 </body>
 </html>
