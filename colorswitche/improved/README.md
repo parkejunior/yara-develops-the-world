@@ -20,3 +20,8 @@ Para melhor leitura do código, removi alguns espaços em branco e arrumei a tab
 ## Index.html
 
 Por padrão, se você só tem um único arquivo HTML dentro do projeto, é melhor manter o nome dele como *index.html* mesmo ao invés do nome do projeto. Isso ajuda inclusive o navegador encontrar o arquivo HTML que o projeto é, já que o *index.html* é o arquivo padrão para os navegadores. Renomeei o arquivo, antes como *colorswitche.html* para *index.html*.
+
+
+## getElementById ?
+
+Esse eu vou te dizer que achei engraçado :sweat_smile:. Mas não se preocupe, não é nada de mais também. Acontece que você "pegou" o elemento `input#blue`, adicionou na variavel `back1`, e não fez mais nada com ele. Ele literalmente não faz nada, então o removi.
