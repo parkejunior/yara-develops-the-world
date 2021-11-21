@@ -15,3 +15,8 @@ O *shortcut* era usado por navegadores mais antigos, como o IE. Sabendo disso en
 ## Espaços em branco
 
 Para melhor leitura do código, removi alguns espaços em branco e arrumei a tabulação da tag `<script>`.
+
+
+## Index.html
+
+Por padrão, se você só tem um único arquivo HTML dentro do projeto, é melhor manter o nome dele como *index.html* mesmo ao invés do nome do projeto. Isso ajuda inclusive o navegador encontrar o arquivo HTML que o projeto é, já que o *index.html* é o arquivo padrão para os navegadores. Renomeei o arquivo, antes como *colorswitche.html* para *index.html*.
