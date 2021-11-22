@@ -12,7 +12,7 @@ Fonte: [https://stackoverflow.com/a/44124060](https://stackoverflow.com/a/441240
 O *shortcut* era usado por navegadores mais antigos, como o IE. Sabendo disso então removi o *shortcut*.
 
 
-## Espaços em branco
+## Espaços em branco na *index.html*
 
 Para melhor leitura do código, removi alguns espaços em branco e arrumei a tabulação da tag `<script>`.
 
@@ -56,3 +56,37 @@ Nesse exemplo você conseguiria ver os dois texto em cores diferentes dentro do 
 >Note: While `<input>` elements of type button are still perfectly valid HTML, the newer `<button>` element is now the favored way to create buttons. Given that a `<button>`’s label text is inserted between the opening and closing tags, you can include HTML in the label, even images.
 
 Referência: [\<input type="button"> - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button)
+
+
+## Espacamentos no *style.css*
+
+Para melhor leitura do código, removi a tabulação das declarações pois elas não estão sendo declaradas dentro de outra declaração, então você não precisa tabular elas. Um exemplo é quando usado Scss (Sass), ele nos permite fazer declarações dentro de declarações:
+
+```scss
+.btn {
+    .btn-blue {
+
+    }
+}
+```
+
+Nesse caso faz sentido o uso da tabulação para o `.btn-blue`, mas não tem necessidade do `.btn` também estar com tabulação.
+
+Outra coisa (Que até meu VSCode fez sozinho) é adicionar um espaço entre o seletor e a declaração. Isso é uma das [boas práticas](https://google.github.io/styleguide/htmlcssguide.html#Declaration_Block_Separation) para melhor leitura. Então ao invés de:
+
+```css
+.btn{
+    /**/
+}
+```
+
+Ficaria assim:
+```css
+.btn {
+    /**/
+}
+```
+
+Outra coisa que meu VSCode fez é mudar de 4 para 2 espaços para as tabulações. Isso não é regra, nem da pra chamar de boas práticas, já que isso é puro gosto pessoal. Eu particularmente uso 2 espaços mais com JavaScript, e com PHP eu uso 4, e outros devs usam o oposto que eu. 
+
+Você não tem que se preocupar com isso, apenas com a constância. Se você usar 4 espaços, então use 4 espaços ate o final do seu arquivo. Se você usar 2, use 2 espaços ate o final do seu arquivo. 
