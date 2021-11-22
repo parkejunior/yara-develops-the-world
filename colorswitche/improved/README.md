@@ -32,3 +32,27 @@ Esse eu vou te dizer que achei engraçado :sweat_smile:. Mas não se preocupe, n
 Você não precisa usar o objeto `window.` antes do `document.`, apenas escrever algo como `document.getElementById()` já irá funcionar.
 
 Referência: [JavaScript Window - W3Schools](https://www.w3schools.com/js/js_window.asp)
+
+
+## Use `<button>`
+
+Se lembra o motivo do Guanabara ensinar usar a tag `<strong>` no lugar da tag `<s>` ? Aqui é quase a mesma coisa.
+
+
+Além do fato que é muito mais agradável ler `<button></button>` ao invés de `<input type="button">`, com a tag `<button>` você consegue adicionar HTML dentro do botão. Por exemplo, imagine que você queira que dentro do mesmo botão tenha 2 textos com cores diferentes. Ficaria algo assim:
+
+
+```html
+<button>
+    <div style="color: red;">Texto vermelho</div>
+    <div style="color: blue;">Texto azul</div>
+</button>
+```
+
+
+Nesse exemplo você conseguiria ver os dois texto em cores diferentes dentro do botão. Com o `<input type="button">`, você não conseguiria esse resultado, já que você não pode passar HTML para o atributo `value`. Apenas seria possível com uma gambiarra usando JavaScript.
+
+
+>Note: While `<input>` elements of type button are still perfectly valid HTML, the newer `<button>` element is now the favored way to create buttons. Given that a `<button>`’s label text is inserted between the opening and closing tags, you can include HTML in the label, even images.
+
+Referência: [\<input type="button"> - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button)
