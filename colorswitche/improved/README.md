@@ -2,6 +2,8 @@
 
 ## Shortcut icon
 
+[*commit #c48e003*](https://github.com/parkejunior/yara-develops-the-world/commit/c48e0034b2e7afe6b6bb390b98f21098f906100b)
+
 Umas das primeiras coisas que notei no código HTML, tanto nesse exercício, quanto no Train Counter, é que você usa o a tag `<link>` com `rel="shortcut icon"`. Sinceramente eu ainda não tinha visto esse padrão, então fui procurar um pouquinho. Isso foi o que encontrei nos forums:
 
 >Warning: The shortcut link type is often seen before icon, but this link type is non-conforming, ignored and web authors must not use it anymore. 
@@ -14,20 +16,28 @@ O *shortcut* era usado por navegadores mais antigos, como o IE. Sabendo disso en
 
 ## Espaços em branco na *index.html*
 
+[*commit #edeaca6*](https://github.com/parkejunior/yara-develops-the-world/commit/edeaca6294251750978e27f47e3be3cd29b79f79)
+
 Para melhor leitura do código, removi alguns espaços em branco e arrumei a tabulação da tag `<script>`.
 
 
 ## Index.html
+
+[*commit #a2cd6a8*](https://github.com/parkejunior/yara-develops-the-world/commit/a2cd6a8763f70c0cd71b9e0db695720e646843fa)
 
 Por padrão, se você só tem um único arquivo HTML dentro do projeto, é melhor manter o nome dele como *index.html* mesmo ao invés do nome do projeto. Isso ajuda inclusive o navegador encontrar o arquivo HTML que o projeto é, já que o *index.html* é o arquivo padrão para os navegadores. Renomeei o arquivo, antes como *colorswitche.html* para *index.html*.
 
 
 ## `getElementById` ?
 
+[*commit #a2fd52c*](https://github.com/parkejunior/yara-develops-the-world/commit/a2fd52c71f5b8ef078fa0f2e758507dadda1f0fe)
+
 Esse eu vou te dizer que achei engraçado :sweat_smile:. Mas não se preocupe, não é nada de mais também. Acontece que você "pegou" o elemento `input#blue`, adicionou na variavel `back1`, e não fez mais nada com ele. Ele literalmente não faz nada, então o removi.
 
 
 ## Apenas `document.`
+
+[*commit #05b27b3*](https://github.com/parkejunior/yara-develops-the-world/commit/05b27b31d417819a92a80797f302332f70af328a)
 
 Você não precisa usar o objeto `window.` antes do `document.`, apenas escrever algo como `document.getElementById()` já irá funcionar.
 
@@ -35,6 +45,8 @@ Referência: [JavaScript Window - W3Schools](https://www.w3schools.com/js/js_win
 
 
 ## Use `<button>`
+
+[*commit #a89ecd3*](https://github.com/parkejunior/yara-develops-the-world/commit/a89ecd34574a58fd566e9a52073295168fbebc8b)
 
 Se lembra o motivo do Guanabara ensinar usar a tag `<strong>` no lugar da tag `<s>` ? Aqui é quase a mesma coisa.
 
@@ -58,7 +70,9 @@ Nesse exemplo você conseguiria ver os dois texto em cores diferentes dentro do 
 Referência: [\<input type="button"> - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button)
 
 
-## Espacamentos no *style.css*
+## Espacamentos no *style.css* 
+
+[*commit #6ba1183*](https://github.com/parkejunior/yara-develops-the-world/commit/6ba1183788ff56aa4873220ddff7b30ec61f3d4d)
 
 Para melhor leitura do código, removi a tabulação das declarações pois elas não estão sendo declaradas dentro de outra declaração, então você não precisa tabular elas. Um exemplo é quando usado Scss (Sass), ele nos permite fazer declarações dentro de declarações:
 
