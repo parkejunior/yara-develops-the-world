@@ -22,3 +22,7 @@ Essa página tem uma função que incrementa `1+` cada vez que o usuário precio
 
 ## [Color Wheel Switche](colorswitche)
 Página criada com o intuito de exercitar os conceitos sobre DOM. A página possui diversos botões que quando clicados mudam as cores do background da página. Nesse exercício foi usado `getElementById()` para acessar o id elementos que queriamos acessar. 
+
+
+**Versão melhorada com documentação das modificações:**
+[Colorswitche (Improved)](colorswitche/improved)
