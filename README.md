@@ -26,3 +26,10 @@ Página criada com o intuito de exercitar os conceitos sobre DOM. A página poss
 
 **Versão melhorada com documentação das modificações:**
 [Colorswitche (Improved)](colorswitche/improved)
+
+
+## [Learning Sass 2.0](learning-sass-2.0)
+Básico do pré-processador Sass. 
+- Exemplos de usos do Sass para criação de botões e textos coloridos.
+- Exemplos de uso de Variables, Nesting, Import, Partials e Modules definidos no [guia do Sass](https://sass-lang.com/guide).
+- Documentação para instalação e uso do Sass
