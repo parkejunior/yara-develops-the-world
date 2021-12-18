@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Sass</title>
+    <link rel="stylesheet" href="dist/css/all.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        section {
+            border: 1px solid #999;
+            border-radius: 10px;
+            padding: 10px 15px;
+            margin: 10px auto;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Hello Sass!</h1>
+
+        <section>
+            <h2>Buttons</h2>
+            <p>Some buttons</p>
+            
+            <div>
+                <button class="btn">Button Normal</button>
+                <button class="btn btn-green">Button Green</button>
+                <button class="btn btn-yellow">Button Yellow</button>
+                <button class="btn btn-red">Button Red</button>
+                <button class="btn btn-blue">Button Blue</button>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Texts</h2>
+            <p>Some texts</p>
+        
+            <div>
+                <p>Text Normal</p>
+                <p class="text-green">Text Green</p>
+                <p class="text-yellow">Text Yellow</p>
+                <p class="text-red">Text Red</p>
+                <p class="text-blue">Text Blue</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Site example</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci officia quasi cumque nihil omnis laboriosam ipsum reiciendis. Officiis, quam provident repellat cumque saepe laboriosam consectetur amet beatae architecto sequi consequuntur.</p>
+        
+            <button class="btn btn-blue">Read more</button>
+        </section>
+    </main>
+</body>
+</html>

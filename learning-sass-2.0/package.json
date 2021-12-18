@@ -1,0 +1,19 @@
+{
+  "name": "learning-sass",
+  "version": "2.0.0",
+  "description": "To learning Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hello": "echo \"Hello!\""
+  },
+  "keywords": [
+    "sass",
+    "css"
+  ],
+  "author": "Patrick Luan",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.45.0"
+  }
+}
