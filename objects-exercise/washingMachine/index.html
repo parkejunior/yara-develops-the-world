@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon2.ico" type="image/x-icon">
+    <title>Washing Machine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+        
+        body{
+            background-color:black;
+            color:#f3d52a;
+            font-family: 'Roboto Slab', serif;
+            background-image: url("./wmachine1500.png");
+            background-repeat: no-repeat;       
+            background-size: 100%; 
+        }
+        main{
+            background-color: #000000be;
+            margin-left:30%;
+            margin-right:30%;
+            border-radius: 20px;
+        }
+        h1{
+            color:#f3d52a;
+            font-family: 'Permanent Marker', cursive;
+            font-size:2.5em;
+            padding: 20px;
+        }
+        
+        #form{
+            background-color: #000000be;
+            padding: 20px;
+            border-radius: 10px;
+            
+            
+        }
+        #brandField{
+            background-color:  #f3e388;
+            border-radius: .8px;
+            margin: 10px 0;
+            width: 150px;
+            font-weight: 400;
+            border-radius: 20px;
+            font-family: 'Roboto Slab', serif;
+            font-size: 1em;
+            font-weight: 550;
+            text-align: center;
+        }
+        
+        #statusField{
+            background-color:  #f3e388;
+            border-radius: .8px;
+            margin: 10px 0;
+            width: 150px;
+            border-radius: 20px;
+            font-family: 'Roboto Slab', serif;
+            font-size: 1em;
+            font-weight: 550;
+            text-align: center;
+        }
+
+        #drierField{
+            background-color:  #f3e388;
+            border-radius: .8px;
+            margin: 10px 0;
+            width: 150px;
+            border-radius: 20px;
+            font-family: 'Roboto Slab', serif;
+            font-size: 1em;
+            font-weight: 550;
+            text-align: center;
+        }
+
+        #programField{
+            background-color:  #f3e388;
+            border-radius: .8px;
+            margin: 10px 0;
+            width: 30px;
+            border-radius: 20px;
+            font-family: 'Roboto Slab', serif;
+            font-size: 1em;
+            font-weight: 550;
+            text-align: center;
+        }
+
+        #consumptionField{
+            background-color:  #f3e388;
+            border-radius: .8px;
+            margin: 10px 0;
+            width: 30px;
+            border-radius: 20px;
+            font-family: 'Roboto Slab', serif;
+            font-size: 1em;
+            font-weight: 550;
+            text-align: center;
+        }
+        #brand{
+            color: #e29ae2;
+            margin: 4px;
+            
+            
+        }
+        #status{
+            color: #e29ae2;
+            margin: 4px;
+            }
+
+        #drier{
+            color: #e29ae2;
+            margin: 4px;
+        }
+        #programs{
+            color: #e29ae2;
+            margin: 4px;
+        }
+        #consumption{
+            color: #e29ae2;
+            margin: 4px;
+        }
+
+        ul {
+         list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+    <div>
+        <h1>Washing Machine Program</h1>
+        <ul>
+            <li>
+                <strong>BRAND</strong>
+                <div id="brand"></div>
+            </li>
+            <li>
+                <strong>STATUS</strong>
+                <div id="status"></div>
+            </li>
+            <li>
+                <strong>DRIER</strong>
+                <div id="drier"></div>
+            </li>
+            <li>
+                <strong>PROGRAMS</strong>
+                <div id="programs"></div>
+            </li>
+            <li>
+                <strong>CONSUMPTION</strong>
+                <div id="consumption"></div>
+            </li>
+        </ul>
+        
+
+        <form id="form">
+            <label for="brandField">Brand</label>
+            <input type="text" id="brandField">
+
+            <label for="status">Status(Full/Empty)</label>
+            <input type="text" id="statusField">
+            
+            <label for="drierField">Drier  </label>
+            <input type="text" id="drierField">
+
+            <label for="programField">Program</label>
+            <input type="number"  id="programField" min="1" max="9">
+            <br>
+
+            <label for="consumptionField">Consumption %</label>
+            <input type="number" id="consumptionField" min="1" max="100" >
+
+            
+        </form>
+        <div id="wmachineActions"></div>
+    </div>
+   </main>
+    <script src="washingMachine.js"></script>
+    
+    <script>
+        let listBrand = document.getElementById("brand");
+        let listStatus = document.getElementById("status");
+        let listDrier = document.getElementById("drier");
+        let listProgram = document.getElementById("programs");
+        let listConsumption = document.getElementById("consumption")
+
+        function setWmachineOnDom(washingMachine){
+            listBrand.innerText = washingMachine.brand;
+            listStatus.innerText = washingMachine.status;
+            listDrier.innerText = washingMachine.drier;
+            listProgram.innerText = washingMachine.program;
+            listConsumption.innerText = washingMachine.consumption;
+
+        }
+
+        
+    
+        
+    </script>
+
+    <script>
+        const brandField = document.getElementById("brandField");
+
+        brandField.addEventListener("keyup" ,(event) => {
+         
+            let inputVale = event.target.value;
+            washingMachine.brand =inputVale;
+            setWmachineOnDom(washingMachine);
+
+        })
+
+        const statusField = document.getElementById("statusField");
+
+        statusField.addEventListener("keyup" , (event) => {
+
+            washingMachine.status = event.target.value;
+
+            setWmachineOnDom(washingMachine);
+        })
+
+        const drierField = document.getElementById("drierField");
+
+        drierField.addEventListener("keyup" , (event) => {
+
+            washingMachine.drier = event.target.value;
+
+            setWmachineOnDom(washingMachine);
+
+        })
+
+        const programField = document.getElementById("programField");
+
+        function eventProgramField(event) {
+
+            washingMachine.program = event.target.value;
+
+            setWmachineOnDom(washingMachine);
+
+        }
+
+        programField.addEventListener("keyup", eventProgramField)
+        programField.addEventListener("change", eventProgramField)
+
+
+        const consumptionField = document.getElementById("consumptionField");
+
+        function eventConsumptionField(event) {
+
+            washingMachine.consumption = event.target.value;
+
+            setWmachineOnDom(washingMachine);
+        }
+
+        consumptionField.addEventListener("keyup", eventConsumptionField)
+        consumptionField.addEventListener("change", eventConsumptionField)
+        
+    </script>
+</body>
+</html>
