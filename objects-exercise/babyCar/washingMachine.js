@@ -1,9 +1,10 @@
 let washingMachine = {
-    status:"empty",
+    status:"Empty",
     drier:true,
     washing:true,
     programs:9,
-    consumption:"low",
+    consumption:30,
+    brand:"Toshiba",
 
     wash(){
         console.log("Washing clothes with my new washing machine has a "+this.consumption + "consumption.")
