@@ -33,3 +33,18 @@ Básico do pré-processador Sass.
 - Exemplos de usos do Sass para criação de botões e textos coloridos.
 - Exemplos de uso de Variables, Nesting, Import, Partials e Modules definidos no [guia do Sass](https://sass-lang.com/guide).
 - Documentação para instalação e uso do Sass
+
+## [Time of the day](time-of-day)
+Página para mostrar a hora atual, com cor baseada no momento do dia e uma imagem com mensagem de saudações que varia dependendo do horário do dia.
+
+**Versão melhorada com documentação das modificações:**
+[Time of the day (Improved)](time-of-day/improved)
+
+Algumas das modificações são:
+
+- Organização do código
+- Adiciona placeholders de carregamento
+- Adiciona função para simular carregamento mais demorado da página
+- Adiciona função para auto atualizar a hora a cada segundo
+- Adiciona pequena transição quando troca o momento do dia
+- Corrige o valor inteiro para exibir dois numerais quando tiver zero
