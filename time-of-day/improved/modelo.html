@@ -7,19 +7,27 @@
     <title>Time of the day</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body onload="carregar()">
+<body>
     <header id="title">
         <h1>Time of the day</h1>
     </header>
     <section>
-        <div id="msg">
-         Aqui vai aparecer a mensagem. 
+        <div class="time-message" id="message">
+            <div class="time-placeholder"></div>
         </div>
-        <div id="foto">
-         <img id="image" src="day.png" alt="Photo of the day">
-        </div>
+        <figure class="time-image" id="image">
+            <div class="time-placeholder"></div>
+        </figure>
     </section>
   
     <script src="script.js"></script>
+    <script>
+        //const fakeDate = new Date('2022-01-14 20:06:01');
+        
+        setTimeout(function () {
+            //timer.changeTime(fakeDate);
+            timer.autoUpdateTime();
+        }, 2000);
+    </script>
 </body>
 </html>
