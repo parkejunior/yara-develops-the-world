@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Fixed</title>
+
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+        }
+
+        .title-large {
+            font-size: 64px;
+
+        }
+
+        .text-white {
+            color: white;
+        }
+        
+        
+        .container {
+            margin: 1rem auto;
+            max-width: 1300px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 25px;
+        }
+
+        .card .card-body {
+            padding: 20px;
+        }
+
+        .parallax {
+            background: rgb(255, 61, 61);
+            width: 100%;
+            /*min-height: 350px;*/
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 100%;
+            transition: all .5s ease-in;
+            -moz-transition: all .5s ease-in;
+            -ms-transition: all .5s ease-in;
+            -o-transition: all .5s ease-in;
+            -webkit-transition: all .5s ease-in;
+        }
+
+        .parallax:hover {
+            background-size: 150% 150%;
+        }
+
+        .parallax-content {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            height: 100%;
+            transition: all .5s ease-in;
+            -moz-transition: all .5s ease-in;
+            -ms-transition: all .5s ease-in;
+            -o-transition: all .5s ease-in;
+            -webkit-transition: all .5s ease-in;
+        }
+
+        .parallax:hover .parallax-content {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .full-size {
+            height: 100vh;
+        }
+
+        .full-size-content {
+            padding: 20px;
+        }
+
+        .full-size-content-1 {
+            background-color: #ffeaa7;
+        }
+
+        .full-size-content-2 {
+            background-color: #fab1a0;
+        }
+
+        .full-size-content-3 {
+            background-color: #ff7675;
+        }
+
+        .full-size-parallax-landscape-1 {
+            background-image: url('./img/landscape-1.jpg');
+            background-position: center;
+        }
+
+        .full-size-parallax-landscape-2 {
+            background-image: url('./img/landscape-2.jpg');
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="full-size full-size-content full-size-content-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est! Cupiditate, voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est! Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est! Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est! Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est! Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est! Cupiditate,
+            voluptatum molestiassection. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est! Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est! Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est! Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae pariatur.
+        </section>
+
+        <section class="full-size">
+            <div class="parallax full-size-parallax-landscape-1">
+                <div class="parallax-content text-white">
+                    <h2>
+                        Landscape 1
+                    </h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut ipsa mollitia ea, quasi odio ipsum et labore tenetur
+                        consectetur numquam neque. Quos, eligendi magni ipsum esse quam perspiciatis eos ut.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="full-size full-size-content full-size-content-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate, voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor
+            molestiae pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+        </section>
+
+        <section class="full-size">
+            <div class="parallax full-size-parallax-landscape-2">
+                <div class="parallax-content text-white">
+                    <h2>
+                        Landscape 2
+                    </h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut ipsa mollitia ea, quasi odio ipsum et labore
+                        tenetur
+                        consectetur numquam neque. Quos, eligendi magni ipsum esse quam perspiciatis eos ut.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="full-size full-size-content full-size-content-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate, voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor
+            molestiae pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit deserunt voluptatibus libero est!
+            Cupiditate,
+            voluptatum molestias. Sequi nihil eaque tenetur est nobis adipisci voluptates, vitae quibusdam dolor molestiae
+            pariatur.
+        </section>
+    </main>
+</body>
+</html>
