@@ -48,3 +48,8 @@ Algumas das modificações são:
 - Adiciona função para auto atualizar a hora a cada segundo
 - Adiciona pequena transição quando troca o momento do dia
 - Corrige o valor inteiro para exibir dois numerais quando tiver zero
+
+## [Parallax Fixed](parallax-fixed)
+Dois exemplos de Parallax com fundo fixado: 
+1. Exemplo de Parallax com `height` do tamanho do conteúdo.
+2. Exemplo de Parallax com `height` do tamanho do viewport usando a unidade de medida `vh`.
