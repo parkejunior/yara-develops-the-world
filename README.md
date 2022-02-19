@@ -53,3 +53,6 @@ Algumas das modificações são:
 Dois exemplos de Parallax com fundo fixado: 
 1. Exemplo de Parallax com `height` do tamanho do conteúdo.
 2. Exemplo de Parallax com `height` do tamanho do viewport usando a unidade de medida `vh`.
+
+## [Learning Types](learning-types)
+Exemplo do uso de Data Types (string, integer, float, object...) no PHP e Typescript e a ausência no JavaScript. 
