@@ -56,3 +56,6 @@ Dois exemplos de Parallax com fundo fixado:
 
 ## [Learning Types](learning-types)
 Exemplo do uso de Data Types (string, integer, float, object...) no PHP e Typescript e a ausência no JavaScript. 
+
+## [Learning Class](learning-class)
+Dois exemplos de criação de entidades utilizando Classes em JavaScript.
