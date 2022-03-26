@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callback</title>
+</head>
+<body>
+  <section>
+    <div id="greetings"></div>
+  </section>
+
+  <script>
+    var greetings = document.querySelector('#greetings')
+
+    setTimeout(sayHello, 3000)
+
+    function sayHello() {
+      greetings.innerHTML = "Olá pessoinha!"
+    }
+  </script>
+</body>
+</html>
